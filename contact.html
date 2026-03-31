@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Artistimpressie</title>
+  <meta name="description" content="Vraag een vrijblijvende offerte aan voor renders of videoimpressies. We reageren binnen één werkdag." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav scrolled" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" style="color:var(--dark);">Artistimpressie</a>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pakket-renders.html">Quick Boost</a></li>
+          <li><a href="pakket-videos.html">Story Pack</a></li>
+          <li><a href="pakket-custom.html">Custom</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="contact.html" class="nav__cta active">Offerte aanvragen</a></li>
+        </ul>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu">
+          <span style="background:var(--dark);"></span>
+          <span style="background:var(--dark);"></span>
+          <span style="background:var(--dark);"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Contact header foto ── -->
+  <div style="position:relative; height:320px; overflow:hidden; margin-top:80px;">
+    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1800&q=80" alt="Artistimpressie contact" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(14,13,11,0.35) 0%, rgba(14,13,11,0.6) 100%);"></div>
+    <div class="container" style="position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);width:100%;">
+      <span class="label" style="color:var(--gold-lt);">Offerte aanvragen</span>
+      <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.5rem);font-weight:300;font-style:italic;color:var(--warm-wt);margin-top:0.5rem;">Laten we samenwerken</h1>
+    </div>
+  </div>
+
+  <!-- ── Contact grid ── -->
+  <div style="background:var(--warm-wt); padding-top:0;">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div>
+          <span class="label" style="display:block; margin-bottom:1rem; margin-top:1rem;">Contact</span>
+          <h1 style="font-size:clamp(2rem,4vw,3rem);">Vertel ons over<br><em style="font-style:italic; font-family:var(--serif); font-weight:300; color:var(--gold-dk);">jouw project</em></h1>
+          <p class="muted body-lg" style="margin-top:1.25rem; max-width:42ch;">
+            Heb je een project en wil je weten wat wij voor je kunnen betekenen? Vul het formulier in of neem direct contact op. We reageren binnen één werkdag.
+          </p>
+
+          <div class="contact-info">
+            <div>
+              <div class="contact-info-item__label">E-mail</div>
+              <div class="contact-info-item__value">info@artistimpressie.nl</div>
+            </div>
+            <div>
+              <div class="contact-info-item__label">Powered by</div>
+              <div class="contact-info-item__value">Summit Media</div>
+            </div>
+            <div>
+              <div class="contact-info-item__label">Reactietijd</div>
+              <div class="contact-info-item__value">Binnen 1 werkdag</div>
+            </div>
+          </div>
+
+          <!-- Pakket overzicht -->
+          <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid rgba(184,154,106,0.2);">
+            <div class="label" style="margin-bottom:1.25rem;">Prijsoverzicht</div>
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; padding-bottom:0.75rem; border-bottom:1px solid rgba(14,13,11,0.07);">
+                <span style="font-size:0.9rem; color:var(--mid);">Pakket 01 — Render</span>
+                <span style="font-family:var(--serif); font-size:1.25rem; color:var(--gold-dk); font-weight:300;">€ 99 <span style="font-family:var(--sans); font-size:0.75rem; color:var(--muted);">/ stuk</span></span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                <span style="font-size:0.9rem; color:var(--mid);">Pakket 02 — Video compleet</span>
+                <span style="font-family:var(--serif); font-size:1.25rem; color:var(--gold-dk); font-weight:300;">€ 750 <span style="font-family:var(--sans); font-size:0.75rem; color:var(--muted);">/ pakket</span></span>
+              </div>
+            </div>
+            <p style="margin-top:1rem; font-size:0.8rem; color:var(--muted);">Alle prijzen exclusief btw. Volumekorting mogelijk bij meerdere renders.</p>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div>
+          <div style="padding:clamp(2rem,5vw,3rem); background:white; border:1px solid rgba(184,154,106,0.15); box-shadow: 0 4px 40px rgba(14,13,11,0.06);">
+            <div class="label" style="margin-bottom:0.5rem;">Vrijblijvende offerte</div>
+            <h2 style="font-family:var(--serif); font-size:1.75rem; font-weight:400; margin-bottom:2rem;">Vertel ons over je project</h2>
+
+            <form action="#" method="post" novalidate>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                <div class="form-group">
+                  <label for="naam">Naam</label>
+                  <input type="text" id="naam" name="naam" placeholder="Jan de Vries" required />
+                </div>
+                <div class="form-group">
+                  <label for="bedrijf">Bedrijf</label>
+                  <input type="text" id="bedrijf" name="bedrijf" placeholder="Optioneel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" placeholder="jan@bedrijf.nl" required />
+              </div>
+
+              <div class="form-group">
+                <label for="telefoon">Telefoonnummer</label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="+31 6 ···" />
+              </div>
+
+              <div class="form-group">
+                <label for="pakket">Interesse in</label>
+                <select id="pakket" name="pakket">
+                  <option value="">Kies een pakket...</option>
+                  <option value="quickboost">Pakket 01 — Quick Boost (€99 p/visual)</option>
+                  <option value="storypack">Pakket 02 — Story Pack (5 visuals)</option>
+                  <option value="custom">Pakket 03 — Custom Impact (maatwerk)</option>
+                  <option value="beide">Beide pakketten</option>
+                  <option value="overig">Anders / vraag</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="project">Beschrijf je project</label>
+                <textarea id="project" name="project" placeholder="Vertel ons over je project — type woning, locatie, gewenste sfeer, deadline, aantal renders of video's..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="bestanden">Bestanden beschikbaar?</label>
+                <select id="bestanden" name="bestanden">
+                  <option value="">Selecteer...</option>
+                  <option value="plattegronden">Plattegronden / tekeningen</option>
+                  <option value="3d">3D-model (Revit, SketchUp, etc.)</option>
+                  <option value="referenties">Alleen referentiebeelden</option>
+                  <option value="nog-niet">Nog geen bestanden beschikbaar</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn--gold" style="width:100%; justify-content:center; display:flex; margin-top:0.5rem;">
+                Offerte aanvragen
+              </button>
+
+              <p style="margin-top:1.25rem; font-size:0.78rem; color:var(--muted); text-align:center; line-height:1.6;">
+                Vrijblijvend. We reageren binnen één werkdag.
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Summit strip ── -->
+  <div class="summit-strip" style="background: var(--cream); margin-top:0;">
+    <p>Mede mogelijk gemaakt door <strong>Summit Media</strong></p>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Artistimpressie</div>
+          <p class="footer__tagline">Impactvolle renders en video's die jouw project overtuigend presenteren.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Pakketten</div>
+          <ul class="footer__links">
+            <li><a href="pakket-renders.html">Pakket 01 — Quick Boost</a></li>
+            <li><a href="pakket-videos.html">Pakket 02 — Story Pack</a></li>
+            <li><a href="pakket-custom.html">Pakket 03 — Custom Impact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Navigatie</div>
+          <ul class="footer__links">
+            <li><a href="over-ons.html">Over ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Artistimpressie.nl — Alle rechten voorbehouden</span>
+        <span>Powered by <span class="footer__summit">Summit Media</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) nav.classList.add('scrolled');
+    });
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>
